@@ -1,17 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" font-family="Segoe UI, Arial, sans-serif">
-  <rect width="800" height="320" fill="#f6f8fa"/>
-  <text x="400" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#24292f">P2P Bybit Optimum Bot</text>
-  <rect x="50" y="80" width="130" height="48" rx="8" fill="#0088cc"/>
-  <text x="115" y="108" text-anchor="middle" fill="white" font-size="12">Telegram</text>
-  <rect x="210" y="80" width="130" height="48" rx="8" fill="#0969da"/>
-  <text x="275" y="108" text-anchor="middle" fill="white" font-size="12">FastAPI</text>
-  <rect x="370" y="80" width="130" height="48" rx="8" fill="#bf8700"/>
-  <text x="435" y="108" text-anchor="middle" fill="white" font-size="12">Bybit P2P</text>
-  <rect x="530" y="80" width="130" height="48" rx="8" fill="#8250df"/>
-  <text x="595" y="108" text-anchor="middle" fill="white" font-size="12">Gemini Rank</text>
-  <rect x="650" y="80" width="100" height="48" rx="8" fill="#656d76"/>
-  <text x="700" y="108" text-anchor="middle" fill="white" font-size="11">MySQL</text>
-  <rect x="150" y="180" width="500" height="70" rx="8" fill="#fff" stroke="#d0d7de"/>
-  <text x="400" y="208" text-anchor="middle" fill="#24292f" font-size="13">Subscription + deposit verify</text>
-  <text x="400" y="232" text-anchor="middle" fill="#57606a" font-size="11">free_req 24h · buy_sub · USDT TRC20</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 400" role="img" aria-label="P2P Bybit Optimum Bot architecture">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="920" height="400" fill="#f6f8fa"/>
+  <text x="460" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#24292f">P2P Bybit Optimum Bot</text>
+  <text x="460" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#57606a">Best USDT/RUB P2P offers on Bybit for traders</text>
+
+  <text x="60" y="92" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">REQUEST FLOW</text>
+  <rect x="30" y="100" width="110" height="54" rx="8" fill="#0088cc"/>
+  <text x="85" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Telegram</text>
+  <text x="85" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ddf4ff">user filters</text>
+  <line x1="140" y1="127" x2="165" y2="127" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="170" y="100" width="110" height="54" rx="8" fill="#0969da"/>
+  <text x="225" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">FastAPI</text>
+  <text x="225" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ddf4ff">bot backend</text>
+  <line x1="280" y1="127" x2="305" y2="127" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="310" y="100" width="120" height="54" rx="8" fill="#bf8700"/>
+  <text x="370" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Bybit P2P</text>
+  <text x="370" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#fff8c5">live offers API</text>
+  <line x1="430" y1="127" x2="455" y2="127" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="460" y="100" width="120" height="54" rx="8" fill="#8250df"/>
+  <text x="520" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Gemini rank</text>
+  <text x="520" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#fbefff">best deal score</text>
+  <line x1="580" y1="127" x2="605" y2="127" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="610" y="100" width="120" height="54" rx="8" fill="#1a7f37"/>
+  <text x="670" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Top offers</text>
+  <text x="670" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#dafbe1">back to Telegram</text>
+
+  <text x="60" y="200" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">MONETIZATION</text>
+  <rect x="170" y="208" width="560" height="72" rx="10" fill="#fff" stroke="#d0d7de"/>
+  <rect x="190" y="224" width="150" height="40" rx="6" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="265" y="242" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#0969da">Subscription</text>
+  <text x="265" y="256" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">paid access</text>
+  <rect x="360" y="224" width="170" height="40" rx="6" fill="#fff8c5" stroke="#bf8700"/>
+  <text x="445" y="242" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#9a6700">Deposit verify</text>
+  <text x="445" y="256" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">USDT TRC20</text>
+  <rect x="550" y="224" width="160" height="40" rx="6" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="630" y="242" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#1a7f37">MySQL</text>
+  <text x="630" y="256" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">users + limits</text>
+  <line x1="225" y1="154" x2="225" y2="188" stroke="#57606a" stroke-width="2" stroke-dasharray="4 3"/>
+  <line x1="225" y1="188" x2="630" y2="188" stroke="#57606a" stroke-width="2" stroke-dasharray="4 3"/>
+  <line x1="630" y1="188" x2="630" y2="224" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="170" y="310" width="560" height="44" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="450" y="338" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Free tier 24h | custom filters | aiogram 3 | Gemini | MySQL</text>
+
+  <text x="460" y="382" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Automated rate monitoring with subscription monetization</text>
 </svg>

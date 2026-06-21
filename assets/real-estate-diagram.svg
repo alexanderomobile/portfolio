@@ -1,13 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="Segoe UI, Arial, sans-serif">
-  <rect width="800" height="360" fill="#f6f8fa"/>
-  <text x="400" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#24292f">Optimum Real Estate - Two Contours</text>
-  <rect x="40" y="55" width="720" height="90" rx="10" fill="#ddf4ff" stroke="#0969da"/>
-  <text x="400" y="82" text-anchor="middle" fill="#0969da" font-size="14" font-weight="bold">Publication (WordPress EU, 13 langs)</text>
-  <text x="400" y="108" text-anchor="middle" fill="#57606a" font-size="12">Houzez | Polylang | REST import/translate/SEO</text>
-  <text x="400" y="155" text-anchor="middle" fill="#57606a" font-size="18">REST sync</text>
-  <rect x="40" y="175" width="720" height="90" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
-  <text x="400" y="202" text-anchor="middle" fill="#1a7f37" font-size="14" font-weight="bold">Operations (Bot Egypt, MySQL + RAG)</text>
-  <text x="400" y="228" text-anchor="middle" fill="#57606a" font-size="12">Telegram | OpenAI | ingest | multilingual query</text>
-  <rect x="120" y="290" width="560" height="44" rx="8" fill="#fff" stroke="#d0d7de"/>
-  <text x="400" y="318" text-anchor="middle" fill="#57606a" font-size="12">Agent query - translate - search - links to site cards</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" role="img" aria-label="Optimum Real Estate Bot architecture">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="920" height="440" fill="#f6f8fa"/>
+  <text x="460" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#24292f">Optimum Real Estate Bot</text>
+  <text x="460" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#57606a">Multilingual agent assistant + WordPress publishing</text>
+
+  <text x="60" y="88" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#0969da">PUBLICATION CONTOUR</text>
+  <rect x="40" y="96" width="840" height="96" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="460" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#0969da">WordPress site (EU market, 13 languages)</text>
+  <text x="460" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#57606a">Houzez theme | Polylang | REST import / translate / SEO</text>
+  <text x="460" y="172" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Property cards published for international buyers</text>
+
+  <line x1="460" y1="200" x2="460" y2="228" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="390" y="232" width="140" height="28" rx="14" fill="#fff" stroke="#57606a"/>
+  <text x="460" y="251" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">REST sync</text>
+  <line x1="460" y1="260" x2="460" y2="288" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="60" y="308" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#1a7f37">OPERATIONS CONTOUR</text>
+  <rect x="40" y="316" width="840" height="96" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="460" y="344" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#1a7f37">Telegram bot for agents (Egypt operations)</text>
+  <text x="460" y="368" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#57606a">Any-language query | OpenAI translate | MySQL + ChromaDB RAG search</text>
+  <text x="460" y="392" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Returns links to matching property cards on the website</text>
+
+  <text x="460" y="428" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">One database, 13-language publishing, faster work with foreign clients</text>
 </svg>
