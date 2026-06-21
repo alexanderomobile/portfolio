@@ -1,28 +1,21 @@
+🇷🇺 [Русский](README.md) · 🇬🇧 [English](README.en.md) · 🇪🇸 [Español](README.es.md)
+
 # Portfolio · Case Studies
 
-Публичное портфолио: задачи, стек, архитектура, инструкции по запуску.
+Публичное портфолио на трёх языках.
 
-**Исходники** — в приватных репозиториях. Здесь — showcase и case study.
+**GitHub Pages:** https://alexanderomobile.github.io/portfolio/
 
 ---
 
-## Продуктовые проекты
+## Проекты
 
-| Проект | Showcase | Case Study |
-|--------|----------|------------|
-| PartioBot | [partio-bot](https://github.com/alexanderomobile/partio-bot) | [02-partio-bot.md](case-studies/02-partio-bot.md) |
-| P2P Bybit | [p2p-bybit-optimum](https://github.com/alexanderomobile/p2p-bybit-optimum) | [03-p2p-bybit-optimum.md](case-studies/03-p2p-bybit-optimum.md) |
-| Optimum Real Estate | [optimum-real-estate-bot](https://github.com/alexanderomobile/optimum-real-estate-bot) | [04-optimum-real-estate.md](case-studies/04-optimum-real-estate.md) |
-| MuzloProm | [muzloprom-ai-clips](https://github.com/alexanderomobile/muzloprom-ai-clips) | [05-muzloprom-ai-clips.md](case-studies/05-muzloprom-ai-clips.md) |
-
-## RAG и LLM
-
-| Проект | Showcase | Case Study |
-|--------|----------|------------|
-| RAG Documentation Assistant | [rag-documentation-assistant](https://github.com/alexanderomobile/rag-documentation-assistant) | [01-rag-documentation-assistant.md](case-studies/01-rag-documentation-assistant.md) |
-| Telegram Knowledge Bot | — | [06-telegram-knowledge-bot.md](case-studies/06-telegram-knowledge-bot.md) |
-| RAG Platform | — | [07-rag-platform.md](case-studies/07-rag-platform.md) |
-
-**GitHub Pages:** https://alexanderomobile.github.io/portfolio/
+| Case study | Business value |
+|------------|----------------|
+| [RAG Documentation Assistant](case-studies/ru/01-rag-documentation-assistant.md) | Сокращает время поиска в документации, снижает нагрузку на поддержку, уменьшает … |
+| [PartioBot](case-studies/ru/02-partio-bot.md) | Экономит время на расчётах «кто кому должен» после поездок и мероприятий, убирае… |
+| [P2P Bybit Optimum Bot](case-studies/ru/03-p2p-bybit-optimum.md) | Автоматизирует мониторинг курса для трейдеров; монетизация через подписку. |
+| [Optimum Real Estate Bot](case-studies/ru/04-optimum-real-estate.md) | Ускоряет работу агентов с иностранными клиентами; единая база и публикация на 13… |
+| [MuzloProm AI Clips](case-studies/ru/05-muzloprom-ai-clips.md) | Масштабирует контент-маркeting без монтажёра; быстрый UGC для соцсетей. |
 
 [@alexanderomobile](https://github.com/alexanderomobile)

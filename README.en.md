@@ -1,0 +1,21 @@
+🇷🇺 [Русский](README.md) · 🇬🇧 [English](README.en.md) · 🇪🇸 [Español](README.es.md)
+
+# Portfolio · Case Studies
+
+Public portfolio in three languages.
+
+**GitHub Pages:** https://alexanderomobile.github.io/portfolio/
+
+---
+
+## Projects
+
+| Case study | Business value |
+|------------|----------------|
+| [RAG Documentation Assistant](case-studies/en/01-rag-documentation-assistant.md) | Cuts doc lookup time, reduces support load, lowers risk of answers from memory i… |
+| [PartioBot](case-studies/en/02-partio-bot.md) | Saves time settling group bills after trips and events; replaces messy spreadshe… |
+| [P2P Bybit Optimum Bot](case-studies/en/03-p2p-bybit-optimum.md) | Automates rate monitoring for traders; subscription-based monetization. |
+| [Optimum Real Estate Bot](case-studies/en/04-optimum-real-estate.md) | Speeds agent workflows with foreign clients; one database, 13-language publishin… |
+| [MuzloProm AI Clips](case-studies/en/05-muzloprom-ai-clips.md) | Scales content marketing without an editor; fast UGC for social media. |
+
+[@alexanderomobile](https://github.com/alexanderomobile)
