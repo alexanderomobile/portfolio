@@ -10,4 +10,4 @@ Respuestas más rápidas en Telegram.
 
 ---
 
-[← Portfolio](../../README.es.md)
+[← Volver al portfolio](https://github.com/alexanderomobile/portfolio/blob/main/README.es.md)

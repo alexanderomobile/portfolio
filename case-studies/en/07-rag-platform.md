@@ -10,4 +10,4 @@ Lowers RAG cost/latency and improves answer quality.
 
 ---
 
-[← Portfolio](../../README.en.md)
+[← Back to portfolio](https://github.com/alexanderomobile/portfolio/blob/main/README.en.md)

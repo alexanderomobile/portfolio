@@ -10,4 +10,4 @@ Reduce costo/latencia RAG y mejora calidad.
 
 ---
 
-[← Portfolio](../../README.es.md)
+[← Volver al portfolio](https://github.com/alexanderomobile/portfolio/blob/main/README.es.md)

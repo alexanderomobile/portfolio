@@ -1,6 +1,6 @@
 # Case Study: MuzloProm AI Clips
 
-**Showcase:** [github.com/alexanderomobile/muzloprom-ai-clips](https://github.com/alexanderomobile/muzloprom-ai-clips)
+**Showcase:** [muzloprom-ai-clips](https://github.com/alexanderomobile/muzloprom-ai-clips/blob/main/README.en.md)
 **Status:** ✅ Production
 
 ---
@@ -23,7 +23,7 @@ See showcase README.
 
 ## Modules
 
-Ingest · Search · Delivery · Integrations *(details in repo showcase)*
+Ingest · Search · Delivery · Integrations
 
 ## Screenshots
 
@@ -35,4 +35,4 @@ See showcase README for run instructions.
 
 ---
 
-[← Back to portfolio](../../README.en.md)
+[← Back to portfolio](https://github.com/alexanderomobile/portfolio/blob/main/README.en.md)

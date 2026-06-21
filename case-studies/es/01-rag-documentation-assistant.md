@@ -1,6 +1,6 @@
 # Case Study: RAG Documentation Assistant
 
-**Showcase:** [github.com/alexanderomobile/rag-documentation-assistant](https://github.com/alexanderomobile/rag-documentation-assistant)
+**Showcase:** [rag-documentation-assistant](https://github.com/alexanderomobile/rag-documentation-assistant/blob/main/README.es.md)
 **Status:** ✅ Production
 
 ---
@@ -23,7 +23,7 @@ See showcase README.
 
 ## Módulos
 
-Ingest · Search · Delivery · Integrations *(details in repo showcase)*
+Ingest · Search · Delivery · Integrations
 
 ## Capturas
 
@@ -35,4 +35,4 @@ See showcase README for run instructions.
 
 ---
 
-[← Volver al portfolio](../../README.es.md)
+[← Volver al portfolio](https://github.com/alexanderomobile/portfolio/blob/main/README.es.md)

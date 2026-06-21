@@ -10,4 +10,4 @@ RAG-бот по базе знаний с памятью диалога.
 
 ---
 
-[← Portfolio](../../README.md)
+[← К портфолио](https://github.com/alexanderomobile/portfolio/blob/main/README.md)

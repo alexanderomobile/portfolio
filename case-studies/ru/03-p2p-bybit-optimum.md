@@ -1,6 +1,6 @@
 # Case Study: P2P Bybit Optimum Bot
 
-**Showcase:** [github.com/alexanderomobile/p2p-bybit-optimum](https://github.com/alexanderomobile/p2p-bybit-optimum)
+**Showcase:** [p2p-bybit-optimum](https://github.com/alexanderomobile/p2p-bybit-optimum/blob/main/README.md)
 **Status:** ✅ Production
 
 ---
@@ -23,7 +23,7 @@ See showcase README.
 
 ## Функциональные блоки
 
-Ingest · Search · Delivery · Integrations *(details in repo showcase)*
+Ingest · Search · Delivery · Integrations
 
 ## Скриншоты
 
@@ -35,4 +35,4 @@ See showcase README for run instructions.
 
 ---
 
-[← К портфолио](../../README.md)
+[← К портфолио](https://github.com/alexanderomobile/portfolio/blob/main/README.md)

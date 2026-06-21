@@ -1,6 +1,6 @@
 # Case Study: P2P Bybit Optimum Bot
 
-**Showcase:** [github.com/alexanderomobile/p2p-bybit-optimum](https://github.com/alexanderomobile/p2p-bybit-optimum)
+**Showcase:** [p2p-bybit-optimum](https://github.com/alexanderomobile/p2p-bybit-optimum/blob/main/README.es.md)
 **Status:** ✅ Production
 
 ---
@@ -23,7 +23,7 @@ See showcase README.
 
 ## Módulos
 
-Ingest · Search · Delivery · Integrations *(details in repo showcase)*
+Ingest · Search · Delivery · Integrations
 
 ## Capturas
 
@@ -35,4 +35,4 @@ See showcase README for run instructions.
 
 ---
 
-[← Volver al portfolio](../../README.es.md)
+[← Volver al portfolio](https://github.com/alexanderomobile/portfolio/blob/main/README.es.md)

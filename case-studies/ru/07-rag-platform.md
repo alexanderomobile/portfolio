@@ -10,4 +10,4 @@
 
 ---
 
-[← Portfolio](../../README.md)
+[← К портфолио](https://github.com/alexanderomobile/portfolio/blob/main/README.md)
