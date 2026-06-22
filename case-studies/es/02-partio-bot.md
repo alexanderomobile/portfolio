@@ -1,3 +1,5 @@
+🇷🇺 [Русский](../ru/02-partio-bot.md) · 🇬🇧 [English](../en/02-partio-bot.md) · 🇪🇸 [Español](../es/02-partio-bot.md)
+
 # Case Study: PartioBot
 
 **Showcase:** [partio-bot](https://github.com/alexanderomobile/partio-bot/blob/main/README.es.md)

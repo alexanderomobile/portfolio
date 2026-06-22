@@ -1,3 +1,5 @@
+🇷🇺 [Русский](../ru/05-muzloprom-ai-clips.md) · 🇬🇧 [English](../en/05-muzloprom-ai-clips.md) · 🇪🇸 [Español](../es/05-muzloprom-ai-clips.md)
+
 # Case Study: MuzloProm AI Clips
 
 **Showcase:** [muzloprom-ai-clips](https://github.com/alexanderomobile/muzloprom-ai-clips/blob/main/README.es.md)

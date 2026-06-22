@@ -1,3 +1,5 @@
+🇷🇺 [Русский](../ru/03-p2p-bybit-optimum.md) · 🇬🇧 [English](../en/03-p2p-bybit-optimum.md) · 🇪🇸 [Español](../es/03-p2p-bybit-optimum.md)
+
 # Case Study: P2P Bybit Optimum Bot
 
 **Showcase:** [p2p-bybit-optimum](https://github.com/alexanderomobile/p2p-bybit-optimum/blob/main/README.md)

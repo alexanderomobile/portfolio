@@ -1,3 +1,5 @@
+🇷🇺 [Русский](../ru/01-rag-documentation-assistant.md) · 🇬🇧 [English](../en/01-rag-documentation-assistant.md) · 🇪🇸 [Español](../es/01-rag-documentation-assistant.md)
+
 # Case Study: RAG Documentation Assistant
 
 **Showcase:** [rag-documentation-assistant](https://github.com/alexanderomobile/rag-documentation-assistant/blob/main/README.es.md)

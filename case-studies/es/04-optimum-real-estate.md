@@ -1,3 +1,5 @@
+🇷🇺 [Русский](../ru/04-optimum-real-estate.md) · 🇬🇧 [English](../en/04-optimum-real-estate.md) · 🇪🇸 [Español](../es/04-optimum-real-estate.md)
+
 # Case Study: Optimum Real Estate Bot
 
 **Showcase:** [optimum-real-estate-bot](https://github.com/alexanderomobile/optimum-real-estate-bot/blob/main/README.es.md)
