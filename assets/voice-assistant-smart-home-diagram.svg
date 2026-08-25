@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-label="Local voice assistant and smart home architecture">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="960" height="640" fill="#f6f8fa"/>
+
+  <text x="480" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#24292f">Local Voice Assistant &amp; Smart Home</text>
+  <text x="480" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#57606a">Self-hosted on Proxmox · no cloud · speech, LLM and personal data never leave the perimeter</text>
+
+  <!-- perimeter -->
+  <rect x="24" y="76" width="912" height="486" rx="12" fill="none" stroke="#1f883d" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="36" y="94" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#1f883d">PRIVACY PERIMETER · egress allow-list (nftables) · WireGuard mesh, no open ports</text>
+
+  <!-- ROOMS -->
+  <text x="44" y="126" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">ROOMS</text>
+  <rect x="44" y="134" width="196" height="70" rx="8" fill="#24292f"/>
+  <text x="142" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Voice satellites ×4</text>
+  <text x="142" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">on-device wake word</text>
+  <text x="142" y="191" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">XMOS mic array · 110 W audio</text>
+
+  <rect x="260" y="134" width="196" height="70" rx="8" fill="#24292f"/>
+  <text x="358" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Zigbee mesh</text>
+  <text x="358" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">presence · climate · leak</text>
+  <text x="358" y="191" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">dimmers · sockets · openings</text>
+
+  <rect x="476" y="134" width="196" height="70" rx="8" fill="#24292f"/>
+  <text x="574" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Messenger channel</text>
+  <text x="574" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">text in · voice notes in</text>
+  <text x="574" y="191" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">owner chat only</text>
+
+  <rect x="692" y="134" width="224" height="70" rx="8" fill="#24292f"/>
+  <text x="804" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Phone · browser</text>
+  <text x="804" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">CalDAV tasks · push-to-talk</text>
+  <text x="804" y="191" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">real TLS via mesh DNS</text>
+
+  <line x1="480" y1="204" x2="480" y2="232" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ASSISTANT -->
+  <rect x="44" y="234" width="872" height="118" rx="10" fill="#ddf4ff" stroke="#54aeff"/>
+  <text x="60" y="256" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#0969da">ASSISTANT CONTAINER · FastAPI · CPU only</text>
+
+  <rect x="60" y="266" width="130" height="70" rx="6" fill="#fff" stroke="#54aeff"/>
+  <text x="125" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#24292f">VAD + ASR</text>
+  <text x="125" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">Russian, punctuated</text>
+  <text x="125" y="323" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1f883d">0.4–0.8 s</text>
+
+  <rect x="202" y="266" width="130" height="70" rx="6" fill="#fff" stroke="#54aeff"/>
+  <text x="267" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#24292f">Speaker ID</text>
+  <text x="267" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">permission ladder</text>
+  <text x="267" y="323" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1f883d">0.04 s</text>
+
+  <rect x="344" y="266" width="150" height="70" rx="6" fill="#fff" stroke="#54aeff"/>
+  <text x="419" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#24292f">Tool loop</text>
+  <text x="419" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">calendar · weather · media</text>
+  <text x="419" y="323" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">home control · memory</text>
+
+  <rect x="506" y="266" width="150" height="70" rx="6" fill="#fff" stroke="#54aeff"/>
+  <text x="581" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#24292f">Hybrid retrieval</text>
+  <text x="581" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">dense + sparse, RRF</text>
+  <text x="581" y="323" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">mail · notes · chats</text>
+
+  <rect x="668" y="266" width="130" height="70" rx="6" fill="#fff" stroke="#54aeff"/>
+  <text x="733" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#24292f">Streaming TTS</text>
+  <text x="733" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">per-sentence audio</text>
+  <text x="733" y="323" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1f883d">0.2 s</text>
+
+  <rect x="810" y="266" width="90" height="70" rx="6" fill="#fff" stroke="#54aeff"/>
+  <text x="855" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#24292f">Scheduler</text>
+  <text x="855" y="307" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">reminders</text>
+  <text x="855" y="323" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">automations</text>
+
+  <line x1="480" y1="352" x2="480" y2="380" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="492" y="371" font-family="Arial,sans-serif" font-size="10" fill="#57606a">LAN only</text>
+
+  <!-- GPU VM -->
+  <rect x="44" y="382" width="872" height="96" rx="10" fill="#fff8c5" stroke="#d4a72c"/>
+  <text x="60" y="404" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#9a6700">GPU NODE · passthrough VM</text>
+
+  <rect x="60" y="414" width="220" height="52" rx="6" fill="#fff" stroke="#d4a72c"/>
+  <text x="170" y="436" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#24292f">LLM · 26B MoE, 4-bit QAT</text>
+  <text x="170" y="453" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#1f883d">3400 tok/s prompt · 150 tok/s gen</text>
+
+  <rect x="292" y="414" width="220" height="52" rx="6" fill="#fff" stroke="#d4a72c"/>
+  <text x="402" y="436" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#24292f">Generative pipeline</text>
+  <text x="402" y="453" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">image 14 s · music 18 s · video</text>
+
+  <rect x="524" y="414" width="220" height="52" rx="6" fill="#fff" stroke="#d4a72c"/>
+  <text x="634" y="436" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#24292f">GPU arbiter</text>
+  <text x="634" y="453" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">evicts LLM before render queue</text>
+
+  <rect x="756" y="414" width="144" height="52" rx="6" fill="#fff" stroke="#d4a72c"/>
+  <text x="828" y="436" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#24292f">CPU fallback</text>
+  <text x="828" y="453" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">degraded mode</text>
+
+  <!-- PLATFORM -->
+  <rect x="44" y="490" width="872" height="60" rx="10" fill="#eaeef2" stroke="#afb8c1"/>
+  <text x="60" y="510" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">PLATFORM · Proxmox VE · 9 containers + GPU VM</text>
+  <text x="60" y="532" font-family="Arial,sans-serif" font-size="11" fill="#24292f">MariaDB · Mail (IMAP + inbound worker) · Reverse proxy &amp; DNS · Netdata parent/child · vzdump daily + weekly, off-disk retention · heartbeat &amp; backup-audit jobs</text>
+
+  <text x="480" y="586" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Measured end-to-end voice turn: 1.3 s · tool-call accuracy 20/20 · zero third-party services in the request path</text>
+</svg>

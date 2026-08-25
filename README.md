@@ -18,5 +18,6 @@
 | [Optimum Real Estate Bot](case-studies/ru/04-optimum-real-estate.md) | Ускоряет работу агентов с иностранными клиентами; единая база и публикация на 13 языках. |
 | [MuzloProm AI Clips](case-studies/ru/05-muzloprom-ai-clips.md) | Масштабирует контент-маркeting без монтажёра; быстрый UGC для соцсетей. |
 | [AI Review Assistant «Эхо»](case-studies/ru/08-ai-review-assistant.md) | Сокращает обработку отзыва с 6 до 1 минуты, держит единый тон на всех площадках и не даёт … |
+| [Локальный виртуальный ассистент и умный дом](case-studies/ru/09-local-voice-assistant-smart-home.md) | Приватный ИИ-контур на своём железе: голос, личные данные и умный дом без облака и подписок. |
 
 [@alexanderomobile](https://github.com/alexanderomobile)

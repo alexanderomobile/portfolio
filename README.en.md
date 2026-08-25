@@ -18,5 +18,6 @@ Public portfolio in three languages.
 | [Optimum Real Estate Bot](case-studies/en/04-optimum-real-estate.md) | Speeds agent workflows with foreign clients; one database, 13-language publishing. |
 | [MuzloProm AI Clips](case-studies/en/05-muzloprom-ai-clips.md) | Scales content marketing without an editor; fast UGC for social media. |
 | [AI Review Assistant «Echo»](case-studies/en/08-ai-review-assistant.md) | Cuts review handling from 6 minutes to 1, keeps one tone across platforms, and never lets … |
+| [Local Voice Assistant & Smart Home](case-studies/en/09-local-voice-assistant-smart-home.md) | A private AI stack on owned hardware: voice, personal data and home control with no cloud and no subscriptions. |
 
 [@alexanderomobile](https://github.com/alexanderomobile)
