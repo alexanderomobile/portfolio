@@ -17,5 +17,6 @@ Portafolio público en tres idiomas.
 | [P2P Bybit Optimum Bot](case-studies/es/03-p2p-bybit-optimum.md) | Automatiza monitoreo de tipos para traders; monetización por suscripción. |
 | [Optimum Real Estate Bot](case-studies/es/04-optimum-real-estate.md) | Acelera ventas con clientes internacionales; base única y publicación en 13 idiomas. |
 | [MuzloProm AI Clips](case-studies/es/05-muzloprom-ai-clips.md) | Escala marketing de contenido sin editor; UGC rápido para redes sociales. |
+| [AI Review Assistant «Echo»](case-studies/es/08-ai-review-assistant.md) | Reduce la gestión de una reseña de 6 a 1 minuto, mantiene un tono único y no deja escapar … |
 
 [@alexanderomobile](https://github.com/alexanderomobile)
