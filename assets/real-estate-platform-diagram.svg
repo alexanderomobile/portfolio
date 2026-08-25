@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 700" role="img" aria-label="Real estate agency platform architecture">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#57606a"/>
+    </marker>
+    <marker id="arrowDim" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8c959f"/>
+    </marker>
+  </defs>
+  <rect width="960" height="700" fill="#f6f8fa"/>
+
+  <text x="480" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#24292f">Real Estate Agency Platform</text>
+  <text x="480" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#57606a">Self-hosted on Proxmox · four languages · zero inbound ports · consent-gated analytics</text>
+
+  <!-- ============ BAND 1 · CONTENT PIPELINE ============ -->
+  <rect x="24" y="74" width="912" height="132" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="38" y="93" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">CONTENT PIPELINE · one-off build of the catalogue</text>
+
+  <rect x="40" y="104" width="150" height="86" rx="8" fill="#24292f"/>
+  <text x="115" y="127" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">53 source folders</text>
+  <text x="115" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">photos · walk-through video</text>
+  <text x="115" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">price notes in free text</text>
+  <text x="115" y="177" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">no structure, no schema</text>
+
+  <line x1="192" y1="147" x2="228" y2="147" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="230" y="104" width="160" height="86" rx="8" fill="#0969da"/>
+  <text x="310" y="127" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Extraction pass</text>
+  <text x="310" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cfe3fb">reads notes and captions</text>
+  <text x="310" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cfe3fb">splits folders holding</text>
+  <text x="310" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cfe3fb">two or three objects</text>
+
+  <line x1="392" y1="147" x2="428" y2="147" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="430" y="104" width="170" height="86" rx="8" fill="#0969da"/>
+  <text x="515" y="127" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Media pipeline</text>
+  <text x="515" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cfe3fb">resize · EXIF stripped</text>
+  <text x="515" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cfe3fb">logo watermark</text>
+  <text x="515" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cfe3fb">poster frame from video</text>
+
+  <line x1="602" y1="147" x2="638" y2="147" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="640" y="104" width="280" height="86" rx="8" fill="#1f883d"/>
+  <text x="780" y="127" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Catalogue · 96 listings</text>
+  <text x="780" y="145" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d3f0dc">552 photographs · 17 videos · 96 map points</text>
+  <text x="780" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d3f0dc">prices normalised to one base currency</text>
+  <text x="780" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d3f0dc">editable in the ordinary admin screens</text>
+
+  <!-- ============ BAND 2 · RUNTIME ============ -->
+  <rect x="24" y="222" width="912" height="238" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="38" y="241" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">RUNTIME · Proxmox, one container per role</text>
+
+  <rect x="40" y="254" width="120" height="60" rx="8" fill="#24292f"/>
+  <text x="100" y="279" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Visitor</text>
+  <text x="100" y="296" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">https</text>
+
+  <line x1="162" y1="284" x2="198" y2="284" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="200" y="254" width="150" height="60" rx="8" fill="#24292f"/>
+  <text x="275" y="279" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Edge CDN · TLS</text>
+  <text x="275" y="296" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">DNS · WAF · MX</text>
+
+  <line x1="352" y1="284" x2="388" y2="284" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="390" y="246" width="160" height="76" rx="8" fill="#bf3989"/>
+  <text x="470" y="270" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Outbound tunnel</text>
+  <text x="470" y="287" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#fbdcee">connection opens from</text>
+  <text x="470" y="302" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#fbdcee">inside · 0 ports exposed</text>
+
+  <line x1="552" y1="284" x2="588" y2="284" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="590" y="246" width="150" height="76" rx="8" fill="#24292f"/>
+  <text x="665" y="270" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Web container</text>
+  <text x="665" y="287" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">Apache · PHP 8.3</text>
+  <text x="665" y="302" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">CMS · child theme · plugin</text>
+
+  <line x1="742" y1="284" x2="778" y2="284" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="780" y="246" width="140" height="76" rx="8" fill="#24292f"/>
+  <text x="850" y="270" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Database</text>
+  <text x="850" y="287" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">MariaDB, separate host</text>
+  <text x="850" y="302" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">two firewall layers</text>
+
+  <!-- mail path -->
+  <text x="44" y="348" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">INBOUND MAIL · port 25 blocked by the ISP, host behind NAT</text>
+
+  <rect x="40" y="358" width="132" height="52" rx="8" fill="#6639ba"/>
+  <text x="106" y="379" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff">MX at the edge</text>
+  <text x="106" y="395" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#e2d6f7">accepts the message</text>
+
+  <line x1="174" y1="384" x2="206" y2="384" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="208" y="358" width="132" height="52" rx="8" fill="#6639ba"/>
+  <text x="274" y="379" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff">Edge worker</text>
+  <text x="274" y="395" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#e2d6f7">signs with a shared secret</text>
+
+  <line x1="342" y1="384" x2="374" y2="384" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="376" y="358" width="150" height="52" rx="8" fill="#6639ba"/>
+  <text x="451" y="379" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff">HTTPS via the tunnel</text>
+  <text x="451" y="395" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#e2d6f7">403 without the secret</text>
+
+  <line x1="528" y1="384" x2="560" y2="384" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="562" y="358" width="150" height="52" rx="8" fill="#24292f"/>
+  <text x="637" y="379" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff">Receiver → Maildir</text>
+  <text x="637" y="395" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">own mail container</text>
+
+  <line x1="714" y1="384" x2="746" y2="384" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <rect x="748" y="358" width="172" height="52" rx="8" fill="#24292f"/>
+  <text x="834" y="379" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff">IMAP · webmail</text>
+  <text x="834" y="395" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">outbound via ESP, DKIM signed</text>
+
+  <text x="44" y="437" font-family="Arial,sans-serif" font-size="10" fill="#57606a">Staging is a full copy on its own vhost, docroot and database — behind basic auth, noindex, with mail and caching switched off so it cannot write or be found.</text>
+  <text x="44" y="452" font-family="Arial,sans-serif" font-size="10" fill="#57606a">Hardened at the vhost: HSTS, nosniff, frame and referrer policy, permissions policy, xmlrpc denied, no directory listing, long-lived cache headers for static assets.</text>
+
+  <!-- ============ BAND 3 · WHAT THE VISITOR GETS ============ -->
+  <rect x="24" y="476" width="912" height="98" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="38" y="495" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">DELIVERED TO THE VISITOR</text>
+
+  <rect x="40" y="506" width="168" height="54" rx="8" fill="#1f883d"/>
+  <text x="124" y="527" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff">Four languages</text>
+  <text x="124" y="544" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d3f0dc">en · ru · de · ar (RTL)</text>
+
+  <rect x="218" y="506" width="168" height="54" rx="8" fill="#1f883d"/>
+  <text x="302" y="527" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff">Currency switcher</text>
+  <text x="302" y="544" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d3f0dc">daily rates · one base</text>
+
+  <rect x="396" y="506" width="168" height="54" rx="8" fill="#1f883d"/>
+  <text x="480" y="527" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff">Search &amp; half map</text>
+  <text x="480" y="544" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d3f0dc">96 pins, filters, districts</text>
+
+  <rect x="574" y="506" width="168" height="54" rx="8" fill="#1f883d"/>
+  <text x="658" y="527" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff">Messaging channels</text>
+  <text x="658" y="544" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d3f0dc">chat apps · forms · mail</text>
+
+  <rect x="752" y="506" width="168" height="54" rx="8" fill="#1f883d"/>
+  <text x="836" y="527" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff">Analytics on consent</text>
+  <text x="836" y="544" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d3f0dc">0 third-party calls before</text>
+
+  <!-- ============ BAND 4 · ROADMAP ============ -->
+  <rect x="24" y="590" width="912" height="92" rx="10" fill="none" stroke="#8c959f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="38" y="609" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#8c959f">ROADMAP · designed, not yet built</text>
+
+  <rect x="40" y="620" width="150" height="46" rx="8" fill="#eaeef2" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="115" y="639" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Voice message</text>
+  <text x="115" y="655" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8c959f">in a chat app</text>
+
+  <line x1="192" y1="643" x2="222" y2="643" stroke="#8c959f" stroke-width="2" marker-end="url(#arrowDim)"/>
+
+  <rect x="224" y="620" width="150" height="46" rx="8" fill="#eaeef2" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="299" y="639" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Speech → text</text>
+  <text x="299" y="655" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8c959f">four languages</text>
+
+  <line x1="376" y1="643" x2="406" y2="643" stroke="#8c959f" stroke-width="2" marker-end="url(#arrowDim)"/>
+
+  <rect x="408" y="620" width="184" height="46" rx="8" fill="#eaeef2" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="500" y="639" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Budget · district · type · rooms</text>
+  <text x="500" y="655" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8c959f">slot filling, one question if unclear</text>
+
+  <line x1="594" y1="643" x2="624" y2="643" stroke="#8c959f" stroke-width="2" marker-end="url(#arrowDim)"/>
+
+  <rect x="626" y="620" width="140" height="46" rx="8" fill="#eaeef2" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="696" y="639" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Catalogue API</text>
+  <text x="696" y="655" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8c959f">the same 96 listings</text>
+
+  <line x1="768" y1="643" x2="798" y2="643" stroke="#8c959f" stroke-width="2" marker-end="url(#arrowDim)"/>
+
+  <rect x="800" y="620" width="120" height="46" rx="8" fill="#eaeef2" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="860" y="639" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Cards + voice</text>
+  <text x="860" y="655" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#8c959f">reply in kind</text>
+</svg>
