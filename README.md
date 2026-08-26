@@ -20,5 +20,7 @@
 | [P2P Bybit Optimum Bot](case-studies/ru/03-p2p-bybit-optimum.md) | Автоматизирует мониторинг курса для трейдеров; монетизация через подписку. |
 | [MuzloProm AI Clips](case-studies/ru/05-muzloprom-ai-clips.md) | Масштабирует контент-маркeting без монтажёра; быстрый UGC для соцсетей. |
 | [AI Review Assistant «Эхо»](case-studies/ru/08-ai-review-assistant.md) | Сокращает обработку отзыва с 6 до 1 минуты, держит единый тон на всех площадках и не даёт … |
+| [Локальный виртуальный ассистент и умный дом](case-studies/ru/09-local-voice-assistant-smart-home.md) | Приватный ИИ-контур на своём железе: голос, личные данные и умный дом без облака и подписок. |
+| [Платформа агентства недвижимости](case-studies/ru/10-real-estate-agency-platform.md) | Настоящий каталог вместо демо-наполнения: 96 объектов, четыре языка, свои серверы и ноль открытых портов. |
 
 [@alexanderomobile](https://github.com/alexanderomobile)
