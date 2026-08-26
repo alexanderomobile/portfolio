@@ -2,6 +2,7 @@
 
 # Case Study: Local Voice Assistant & Smart Home
 
+**Showcase:** [local-voice-assistant](https://github.com/alexanderomobile/local-voice-assistant/blob/main/README.en.md)
 **Status:** ✅ Production
 
 ---
