@@ -2,6 +2,7 @@
 
 # Case Study: Локальный виртуальный ассистент и умный дом
 
+**Showcase:** [local-voice-assistant](https://github.com/alexanderomobile/local-voice-assistant/blob/main/README.md)
 **Status:** ✅ Production
 
 ---
