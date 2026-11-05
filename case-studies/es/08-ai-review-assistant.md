@@ -2,7 +2,7 @@
 
 # Case Study: AI Review Assistant «Echo»
 
-**Showcase:** [ai-review-assistant](https://github.com/alexanderomobile/ai-review-assistant/blob/main/README.es.md)
+**Showcase:** [ai-review-assistant](https://github.com/alexanderomobile/ai-review-assistant/blob/main/README.md)
 **Status:** ✅ Production
 
 ---

@@ -20,7 +20,7 @@ Public portfolio in three languages.
 | [P2P Bybit Optimum Bot](case-studies/en/03-p2p-bybit-optimum.md) | Automates rate monitoring for traders; subscription-based monetization. |
 | [MuzloProm AI Clips](case-studies/en/05-muzloprom-ai-clips.md) | Scales content marketing without an editor; fast UGC for social media. |
 | [AI Review Assistant «Echo»](case-studies/en/08-ai-review-assistant.md) | Cuts review handling from 6 minutes to 1, keeps one tone across platforms, and never lets … |
-| [Local Voice Assistant & Smart Home](case-studies/en/09-local-voice-assistant-smart-home.md) | A private AI stack on owned hardware: voice, personal data and home control with no cloud and no subscriptions. |
 | [Real Estate Agency Platform](case-studies/en/10-real-estate-agency-platform.md) | A real catalogue in place of demo content: 96 listings, four languages, owned servers and zero inbound ports. |
+| [RAG Assistant with Logs](case-studies/en/11-rag-assistant-logs.md) | Shows what prospects ask, what is missing in the materials and how fast answers arrive; re… |
 
 [@alexanderomobile](https://github.com/alexanderomobile)

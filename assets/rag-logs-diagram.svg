@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" role="img" aria-label="RAG Assistant with Logs architecture">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="920" height="440" fill="#f6f8fa"/>
+  <text x="460" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#24292f">RAG Assistant with Logs</text>
+  <text x="460" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#57606a">Telegram answers from the brand-site texts · every request logged, anonymized and measured</text>
+
+  <text x="25" y="92" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">INPUT</text>
+  <rect x="25" y="100" width="150" height="56" rx="8" fill="#24292f"/>
+  <text x="100" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Telegram</text>
+  <text x="100" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">@ZCoderTest_bot</text>
+
+  <line x1="175" y1="128" x2="200" y2="128" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="205" y="92" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">CHECKS</text>
+  <rect x="205" y="100" width="150" height="56" rx="8" fill="#bc4c00"/>
+  <text x="280" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Checks · privacy</text>
+  <text x="280" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#fff1e5">rate limit · HMAC user id</text>
+
+  <line x1="355" y1="128" x2="380" y2="128" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="385" y="92" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">CACHE</text>
+  <rect x="385" y="100" width="150" height="56" rx="8" fill="#8250df"/>
+  <text x="460" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Answer cache</text>
+  <text x="460" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#fbefff">SQLite · TTL · KB version</text>
+
+  <text x="550" y="120" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#57606a">miss</text>
+  <line x1="535" y1="128" x2="560" y2="128" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="565" y="92" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">RETRIEVAL</text>
+  <rect x="565" y="100" width="150" height="56" rx="8" fill="#0969da"/>
+  <text x="640" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">ChromaDB search</text>
+  <text x="640" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ddf4ff">text-embedding-3-small</text>
+
+  <line x1="715" y1="128" x2="740" y2="128" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="745" y="92" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">MODEL</text>
+  <rect x="745" y="100" width="150" height="56" rx="8" fill="#1a7f37"/>
+  <text x="820" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">gpt-4o-mini</text>
+  <text x="820" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#dafbe1">answer from top 4 chunks</text>
+
+  <line x1="820" y1="156" x2="820" y2="204" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <path d="M460 156 V238 H740" fill="none" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="600" y="230" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">hit · instant answer, no LLM call</text>
+
+  <text x="745" y="202" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">OUTPUT</text>
+  <rect x="745" y="210" width="150" height="56" rx="8" fill="#24292f"/>
+  <text x="820" y="234" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Reply to user</text>
+  <text x="820" y="250" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">[send] ok · delivered = 1</text>
+
+  <path d="M280 156 V292" fill="none" stroke="#57606a" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <path d="M820 266 V292 H190 V314" fill="none" stroke="#57606a" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+  <text x="560" y="286" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">every request is logged: answered · no_context · rejected · error</text>
+
+  <text x="25" y="312" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">LOGGING</text>
+  <rect x="25" y="320" width="330" height="56" rx="8" fill="#24292f"/>
+  <text x="190" y="344" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">logs.db (SQLite) · one row per request</text>
+  <text x="190" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">status · reason · error type · stage timings · tags · tokens</text>
+
+  <line x1="355" y1="348" x2="380" y2="348" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="385" y="312" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">STATISTICS</text>
+  <rect x="385" y="320" width="150" height="56" rx="8" fill="#0969da"/>
+  <text x="460" y="344" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">/stats · CSV export</text>
+  <text x="460" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ddf4ff">avg · median · p95 · cache %</text>
+
+  <line x1="535" y1="348" x2="560" y2="348" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="565" y="312" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">INSIGHTS</text>
+  <rect x="565" y="320" width="150" height="56" rx="8" fill="#1a7f37"/>
+  <text x="640" y="344" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">What to improve</text>
+  <text x="640" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#dafbe1">top questions · KB gaps</text>
+
+  <text x="745" y="312" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">RETENTION</text>
+  <rect x="745" y="320" width="150" height="56" rx="8" fill="#cf222e"/>
+  <text x="820" y="344" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">90-day retention</text>
+  <text x="820" y="360" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ffebe9">daily cleanup timer</text>
+
+  <path d="M820 376 V394 H190 V382" fill="none" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <text x="460" y="424" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Test data, 5 Nov 2026: 25 requests · 5 of 21 answers from cache (24%) · avg 1.3 s · p95 3.7 s · 0 errors</text>
+</svg>
