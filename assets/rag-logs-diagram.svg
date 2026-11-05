@@ -82,5 +82,5 @@
 
   <path d="M820 376 V394 H190 V382" fill="none" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
 
-  <text x="460" y="424" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Test data, 5 Nov 2026: 25 requests · 5 of 21 answers from cache (24%) · avg 1.3 s · p95 3.7 s · 0 errors</text>
+  <text x="460" y="424" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Test data, 5 Nov 2026: 31 requests · 26 answered, 7 of them from cache · median 1.2 s · 4 not in KB · 1 rejected · 0 errors</text>
 </svg>
