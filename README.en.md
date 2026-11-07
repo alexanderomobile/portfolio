@@ -22,5 +22,6 @@ Public portfolio in three languages.
 | [AI Review Assistant «Echo»](case-studies/en/08-ai-review-assistant.md) | Cuts review handling from 6 minutes to 1, keeps one tone across platforms, and never lets … |
 | [Real Estate Agency Platform](case-studies/en/10-real-estate-agency-platform.md) | A real catalogue in place of demo content: 96 listings, four languages, owned servers and zero inbound ports. |
 | [RAG Assistant with Logs](case-studies/en/11-rag-assistant-logs.md) | Shows what prospects ask, what is missing in the materials and how fast answers arrive; re… |
+| [Brand Voice LoRA](case-studies/en/12-brand-voice-lora.md) | The model itself keeps the brand style instead of a long prompt: the request is half as lo… |
 
 [@alexanderomobile](https://github.com/alexanderomobile)

@@ -22,5 +22,6 @@
 | [AI Review Assistant «Эхо»](case-studies/ru/08-ai-review-assistant.md) | Сокращает обработку отзыва с 6 до 1 минуты, держит единый тон на всех площадках и не даёт … |
 | [Платформа агентства недвижимости](case-studies/ru/10-real-estate-agency-platform.md) | Настоящий каталог вместо демо-наполнения: 96 объектов, четыре языка, свои серверы и ноль открытых портов. |
 | [RAG Assistant with Logs](case-studies/ru/11-rag-assistant-logs.md) | Показывает, что спрашивают потенциальные клиенты, чего не хватает в материалах и как быстр… |
+| [Brand Voice LoRA](case-studies/ru/12-brand-voice-lora.md) | Стиль бренда держит сама модель, а не длинный промпт: запрос вдвое короче, переписка с кли… |
 
 [@alexanderomobile](https://github.com/alexanderomobile)

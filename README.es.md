@@ -22,5 +22,6 @@ Portafolio público en tres idiomas.
 | [AI Review Assistant «Echo»](case-studies/es/08-ai-review-assistant.md) | Reduce la gestión de una reseña de 6 a 1 minuto, mantiene un tono único y no deja escapar … |
 | [Plataforma de agencia inmobiliaria](case-studies/es/10-real-estate-agency-platform.md) | Un catálogo real en lugar de contenido de demostración: 96 propiedades, cuatro idiomas, servidores propios y cero puertos de entrada. |
 | [RAG Assistant with Logs](case-studies/es/11-rag-assistant-logs.md) | Muestra qué preguntan los clientes potenciales, qué falta en los materiales y la rapidez d… |
+| [Brand Voice LoRA](case-studies/es/12-brand-voice-lora.md) | El propio modelo mantiene el estilo de la marca en lugar de un prompt largo: la petición e… |
 
 [@alexanderomobile](https://github.com/alexanderomobile)
