@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" role="img" aria-label="FAQ Assistant pipeline">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="920" height="440" fill="#f6f8fa"/>
+  <text x="460" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#24292f">FAQ Assistant</text>
+  <text x="460" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#57606a">Chat widget on every page of ai.optimum-ltd.com · answers only from the site's knowledge base · remembers the conversation</text>
+
+  <text x="25" y="92" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">SITE</text>
+  <rect x="25" y="100" width="190" height="56" rx="8" fill="#24292f"/>
+  <text x="120" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Widget → /api/chat (Flask)</text>
+  <text x="120" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">CSRF · 16 KB · salted IP fingerprint</text>
+
+  <line x1="215" y1="128" x2="240" y2="128" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="245" y="92" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">GUARDS</text>
+  <rect x="245" y="100" width="190" height="56" rx="8" fill="#bc4c00"/>
+  <text x="340" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Rate limits · PII redaction</text>
+  <text x="340" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#fff1e5">8/min · 80/day · phones, emails, names cut</text>
+
+  <line x1="435" y1="128" x2="460" y2="128" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="465" y="92" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">DIALOG MEMORY</text>
+  <rect x="465" y="100" width="190" height="56" rx="8" fill="#8250df"/>
+  <text x="560" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">Last 3 Q/A · 30 min</text>
+  <text x="560" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#fbefff">follow-ups rewritten for search</text>
+
+  <line x1="655" y1="128" x2="680" y2="128" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="685" y="92" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">RETRIEVAL</text>
+  <rect x="685" y="100" width="210" height="56" rx="8" fill="#0969da"/>
+  <text x="790" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">FAISS · site texts + 30 FAQ</text>
+  <text x="790" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#ddf4ff">sections + paragraphs · top 6 · cosine ≥ 0.30</text>
+
+  <line x1="790" y1="156" x2="790" y2="196" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="25" y="190" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">LOG</text>
+  <rect x="25" y="198" width="270" height="64" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="160" y="222" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#24292f">SQLite journal, 90 days</text>
+  <text x="160" y="240" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">redacted Q/A · status · sources · stage timings</text>
+  <text x="160" y="254" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#57606a">tokens · knowledge-base version</text>
+
+  <line x1="595" y1="230" x2="295" y2="230" stroke="#57606a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="625" y="190" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">ANSWER</text>
+  <rect x="625" y="198" width="270" height="64" rx="8" fill="#1a7f37"/>
+  <text x="760" y="222" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">gpt-4.1-mini, facts only from fragments</text>
+  <text x="760" y="240" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#dafbe1">no prices or deadlines as numbers · no promises</text>
+  <text x="760" y="254" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#dafbe1">honest "not in the materials" + contacts</text>
+
+  <text x="25" y="300" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">BLIND EVALUATION ON A HELD-OUT SET (59 TURNS, 3 JUDGES)</text>
+  <rect x="25" y="308" width="870" height="76" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="45" y="332" font-family="Arial,sans-serif" font-size="11" fill="#24292f">· correct answers: 45 of 59 vs 27 for the course code on the same knowledge base and model (gpt-4.1-mini)</text>
+  <text x="45" y="350" font-family="Arial,sans-serif" font-size="11" fill="#24292f">· honest “not in the materials”: 11 of 12 vs 3 · follow-ups answered correctly: 18 of 23 vs 12 · invented facts: 6 vs 18</text>
+  <text x="45" y="368" font-family="Arial,sans-serif" font-size="11" fill="#24292f">· without dialog memory 42 correct, without follow-up rewriting 44 · cost: median 1.67 s vs 1.05 s, prompt 1139 vs 477 tokens</text>
+
+  <text x="460" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#57606a">Test data, 8 Nov 2026 · questions and judges are LLM agents · live on the site, no measured client traffic yet</text>
+</svg>

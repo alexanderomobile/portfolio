@@ -23,5 +23,6 @@ Portafolio público en tres idiomas.
 | [Plataforma de agencia inmobiliaria](case-studies/es/10-real-estate-agency-platform.md) | Un catálogo real en lugar de contenido de demostración: 96 propiedades, cuatro idiomas, servidores propios y cero puertos de entrada. |
 | [RAG Assistant with Logs](case-studies/es/11-rag-assistant-logs.md) | Muestra qué preguntan los clientes potenciales, qué falta en los materiales y la rapidez d… |
 | [Brand Voice LoRA](case-studies/es/12-brand-voice-lora.md) | El propio modelo mantiene el estilo de la marca en lugar de un prompt largo: la petición e… |
+| [FAQ Assistant](case-studies/es/13-faq-assistant.md) | El visitante obtiene respuestas sobre servicios, casos y cómo empezar en el propio sitio, … |
 
 [@alexanderomobile](https://github.com/alexanderomobile)
