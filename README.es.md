@@ -24,5 +24,6 @@ Portafolio público en tres idiomas.
 | [RAG Assistant with Logs](case-studies/es/11-rag-assistant-logs.md) | Muestra qué preguntan los clientes potenciales, qué falta en los materiales y la rapidez d… |
 | [Brand Voice LoRA](case-studies/es/12-brand-voice-lora.md) | El propio modelo mantiene el estilo de la marca en lugar de un prompt largo: la petición e… |
 | [FAQ Assistant](case-studies/es/13-faq-assistant.md) | El visitante obtiene respuestas sobre servicios, casos y cómo empezar en el propio sitio, … |
+| [Tutor con IA para una plataforma educativa](case-studies/es/14-ai-curator.md) | El objetivo es quitar a profesores y soporte las preguntas rutinarias de los estudiantes: … |
 
 [@alexanderomobile](https://github.com/alexanderomobile)

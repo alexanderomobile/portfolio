@@ -24,5 +24,6 @@
 | [RAG Assistant with Logs](case-studies/ru/11-rag-assistant-logs.md) | Показывает, что спрашивают потенциальные клиенты, чего не хватает в материалах и как быстр… |
 | [Brand Voice LoRA](case-studies/ru/12-brand-voice-lora.md) | Стиль бренда держит сама модель, а не длинный промпт: запрос вдвое короче, переписка с кли… |
 | [FAQ Assistant](case-studies/ru/13-faq-assistant.md) | Посетитель получает ответ про услуги, кейсы и порядок работы прямо на сайте, в том числе н… |
+| [ИИ-куратор для образовательной платформы](case-studies/ru/14-ai-curator.md) | Задача — снять с преподавателей и поддержки типовые вопросы студентов: ответ по материалам… |
 
 [@alexanderomobile](https://github.com/alexanderomobile)

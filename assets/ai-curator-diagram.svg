@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1100" viewBox="0 0 1200 1100" role="img" aria-labelledby="title desc">
+  <title id="title">ИИ-куратор курса: путь вопроса</title>
+  <desc id="desc">Вопрос студента проходит лимиты и обезличивание, анализ запроса (явная просьба оценить или перенести перебивает модель, вопрос о правилах курса без просьбы возвращается в organizational), затем ограничения в коде, данные LMS (сроки и срок появления записи вебинара считает код), поиск по базе знаний (выбор в интерфейсе — жёсткий фильтр, анализ запроса — приоритет при ранжировании) и рекомендации; часть материалов код кладёт сам — разделы методички, обзор модуля, FAQ о доработке и об опоздании; ответ генерирует модель с few-shot примерами, код проверяет его (обещание оценки или переноса, срок доработки, длительность в рекомендации) и добавляет блок «Источники»; запись попадает в журнал, из которого строятся дашборд и отчёт по темам.</desc>
+  <defs>
+    <style>
+      .h { font: 700 15px "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif; }
+      .t { font: 400 12.5px "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif; fill: #1f2937; }
+      .s { font: italic 400 11.5px "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif; fill: #5b6576; }
+      .m { font: 400 11.5px Consolas, "SFMono-Regular", Menlo, "DejaVu Sans Mono", monospace; fill: #1f2937; }
+      .title { font: 700 22px "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif; fill: #111827; }
+      .sub { font: 400 13px "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif; fill: #5b6576; }
+      .line { stroke: #4b5563; stroke-width: 1.6; fill: none; }
+      .arrow { stroke: #4b5563; stroke-width: 1.6; fill: none; marker-end: url(#arr); }
+      .arrow-red { stroke: #c93a3a; stroke-width: 1.6; fill: none; stroke-dasharray: 6 4; marker-end: url(#arr-red); }
+    </style>
+    <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c93a3a"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="1100" fill="#f6f8fb"/>
+
+  <text x="32" y="42" class="title">ИИ-куратор курса: путь вопроса</text>
+  <text x="32" y="66" class="sub">анализ → ограничения / LMS / RAG / рекомендации / материалы от кода → генерация с few-shot → проверки → «Источники» → журнал → отчёт</text>
+
+  <!-- Ряд 1: студент, лимиты, анализ запроса, индексация -->
+  <rect x="32" y="92" width="200" height="146" rx="10" fill="#ffffff" stroke="#52627a" stroke-width="1.6"/>
+  <text x="46" y="116" class="h" fill="#52627a">Студент</text>
+  <text x="46" y="138" class="t">
+    <tspan x="46" dy="0">Вопрос в чате Streamlit.</tspan>
+    <tspan x="46" dy="17">Слева — уровень, модуль,</tspan>
+    <tspan x="46" dy="17">тип материалов, тема,</tspan>
+    <tspan x="46" dy="17">демо-студент из LMS.</tspan>
+  </text>
+
+  <rect x="256" y="92" width="232" height="146" rx="10" fill="#ffffff" stroke="#52627a" stroke-width="1.6"/>
+  <text x="270" y="116" class="h" fill="#52627a">Лимиты и обезличивание</text>
+  <text x="270" y="138" class="t">
+    <tspan x="270" dy="0">До 1500 знаков; 20 вопросов</tspan>
+    <tspan x="270" dy="17">в час на посетителя, 60 в час</tspan>
+    <tspan x="270" dy="17">на всех, 300 в день. Почта,</tspan>
+    <tspan x="270" dy="17">Telegram, телефоны, документы,</tspan>
+    <tspan x="270" dy="17">имя после «меня зовут» —</tspan>
+    <tspan x="270" dy="17">вырезаются до OpenAI и журнала.</tspan>
+  </text>
+
+  <rect x="512" y="92" width="360" height="146" rx="10" fill="#eef4fc" stroke="#2a6fc9" stroke-width="1.6"/>
+  <text x="526" y="116" class="h" fill="#2a6fc9">Анализ запроса (router)</text>
+  <text x="526" y="138" class="t">
+    <tspan x="526" dy="0">gpt-4.1-mini, структурированный вывод: сценарий</tspan>
+    <tspan x="526" dy="17">(8 intent), модуль, тема, где искать, уровень,</tspan>
+    <tspan x="526" dy="17">данные студента, обзор ли модуля; 2 последние</tspan>
+    <tspan x="526" dy="17">реплики. Не ответила → правила на регулярках.</tspan>
+    <tspan x="526" dy="17">Явная просьба оценить/перенести перебивает модель;</tspan>
+    <tspan x="526" dy="17">вопрос о правилах без просьбы → organizational.</tspan>
+  </text>
+
+  <rect x="896" y="92" width="272" height="146" rx="10" fill="#f1effc" stroke="#5b47c9" stroke-width="1.6" stroke-dasharray="7 4"/>
+  <text x="910" y="116" class="h" fill="#5b47c9">Индексация базы (офлайн)</text>
+  <text x="910" y="138" class="t">
+    <tspan x="910" dy="0">data/kb: лекции, методички, FAQ,</tspan>
+    <tspan x="910" dy="17">обзор курса с YAML front-matter</tspan>
+    <tspan x="910" dy="17">→ разделы ## → фрагменты</tspan>
+    <tspan x="910" dy="17">по 1200 знаков, перекрытие 150</tspan>
+    <tspan x="910" dy="17">→ text-embedding-3-large → Chroma</tspan>
+  </text>
+  <text x="910" y="223" class="m">python -m curator.ingest</text>
+
+  <path d="M232 165 H255" class="arrow"/>
+  <path d="M488 165 H511" class="arrow"/>
+
+  <!-- Распределение после анализа -->
+  <path d="M692 238 V262" class="line"/>
+  <path d="M168 262 H1032" class="line"/>
+  <circle cx="692" cy="262" r="3" fill="#4b5563"/>
+  <path d="M168 262 V285" class="arrow"/>
+  <path d="M456 262 V285" class="arrow"/>
+  <path d="M744 262 V285" class="arrow"/>
+  <path d="M1032 262 V285" class="arrow"/>
+  <text x="186" y="255" class="s">intent, модуль, тема, тип материалов, уровень</text>
+  <path d="M1120 238 V285" class="arrow"/>
+  <text x="1128" y="268" class="s">индекс</text>
+
+  <!-- Ряд 2: ограничения, LMS, рекомендации, RAG -->
+  <rect x="32" y="286" width="272" height="248" rx="10" fill="#fdf0f0" stroke="#c93a3a" stroke-width="1.6"/>
+  <text x="46" y="310" class="h" fill="#c93a3a">Ограничения в коде</text>
+  <text x="46" y="334" class="t">
+    <tspan x="46" dy="0">Оценка (grading_request), перенос</tspan>
+    <tspan x="46" dy="17">(schedule_change), не по курсу</tspan>
+    <tspan x="46" dy="17">(off_topic) → ответ из шаблона,</tspan>
+    <tspan x="46" dy="17">модель не вызывается: отказ</tspan>
+    <tspan x="46" dy="17">и что можно сделать — критерии</tspan>
+    <tspan x="46" dy="17">из методички, правило переноса</tspan>
+    <tspan x="46" dy="17">из FAQ, дедлайн, окно заявки</tspan>
+    <tspan x="46" dy="17">и статус задания по LMS. Просьба</tspan>
+    <tspan x="46" dy="17">сдвинуть вебинар — правило</tspan>
+    <tspan x="46" dy="17">и ближайшие события. Не по курсу,</tspan>
+    <tspan x="46" dy="17">но с темой курса — помощь с ней</tspan>
+    <tspan x="46" dy="17">со ссылкой на лекцию.</tspan>
+  </text>
+
+  <rect x="320" y="286" width="272" height="248" rx="10" fill="#edf8f3" stroke="#16805a" stroke-width="1.6"/>
+  <text x="334" y="310" class="h" fill="#16805a">Данные LMS</text>
+  <text x="334" y="334" class="t">
+    <tspan x="334" dy="0">JSON-файлы или HTTP-заглушка</tspan>
+    <tspan x="334" dy="17">на FastAPI: задания, расписание,</tspan>
+    <tspan x="334" dy="17">статусы ДЗ и перенос студента.</tspan>
+    <tspan x="334" dy="17">Код сам считает «осталось 3 дня</tspan>
+    <tspan x="334" dy="17">14 часов», окно заявки на перенос</tspan>
+    <tspan x="334" dy="17">и срок записи вебинара (МСК) —</tspan>
+    <tspan x="334" dy="17">модель даты не пересчитывает.</tspan>
+    <tspan x="334" dy="17">На доработке — правило 5 дней,</tspan>
+    <tspan x="334" dy="17">а не «осталось». Для deadline,</tspan>
+    <tspan x="334" dy="17">organizational, вопросов о своих</tspan>
+    <tspan x="334" dy="17">сроках и о модуле целиком.</tspan>
+  </text>
+
+  <rect x="608" y="286" width="272" height="248" rx="10" fill="#fdf5e6" stroke="#b06d00" stroke-width="1.6"/>
+  <text x="622" y="310" class="h" fill="#b06d00">Рекомендации</text>
+  <text x="622" y="334" class="t">
+    <tspan x="622" dy="0">Каталог resources.csv по уровню,</tspan>
+    <tspan x="622" dy="17">модулю и теме. Если их нет или</tspan>
+    <tspan x="622" dy="17">первый фрагмент поиска — из</tspan>
+    <tspan x="622" dy="17">другого модуля, они берутся из</tspan>
+    <tspan x="622" dy="17">фрагмента. Нет их — нет ресурсов.</tspan>
+    <tspan x="622" dy="17">Разделы лекций «Если сложно»</tspan>
+    <tspan x="622" dy="17">начинающему, «Для продвинутых»</tspan>
+    <tspan x="622" dy="17">продвинутому. Внешние ссылки —</tspan>
+    <tspan x="622" dy="17">только из каталога.</tspan>
+    <tspan x="622" dy="17">recommendation и difficulty:</tspan>
+    <tspan x="622" dy="17">2 ресурса + 1 раздел; material: 1.</tspan>
+  </text>
+
+  <rect x="896" y="286" width="272" height="248" rx="10" fill="#f1effc" stroke="#5b47c9" stroke-width="1.6"/>
+  <text x="910" y="310" class="h" fill="#5b47c9">Поиск по базе знаний (RAG)</text>
+  <text x="910" y="334" class="t">
+    <tspan x="910" dy="0">Chroma, косинусная близость.</tspan>
+    <tspan x="910" dy="17">Выбор слева (модуль, тип, тема) —</tspan>
+    <tspan x="910" dy="17">жёсткий фильтр; найдено &lt; 2 →</tspan>
+    <tspan x="910" dy="17">ослабить: без темы → модуль → все.</tspan>
+    <tspan x="910" dy="17">Модуль, тип, тема из анализа —</tspan>
+    <tspan x="910" dy="17">приоритет, а не стена: +0,05</tspan>
+    <tspan x="910" dy="17">к близости; фрагмент вне фильтра</tspan>
+    <tspan x="910" dy="17">проходит, если заметно ближе.</tspan>
+    <tspan x="910" dy="17">Близость &lt; 0,30 отбрасывается;</tspan>
+    <tspan x="910" dy="17">до 5 фрагментов. Пусто → ответ</tspan>
+    <tspan x="910" dy="17">«в материалах курса нет».</tspan>
+  </text>
+
+  <!-- В генерацию -->
+  <path d="M456 534 V565" class="arrow"/>
+  <path d="M744 534 V565" class="arrow"/>
+  <path d="M1032 534 V565" class="arrow"/>
+
+  <!-- Ряд 3: генерация и выходной guard -->
+  <rect x="320" y="566" width="848" height="167" rx="10" fill="#eef4fc" stroke="#2a6fc9" stroke-width="1.6"/>
+  <text x="334" y="590" class="h" fill="#2a6fc9">Генерация ответа — gpt-4.1-mini, temperature 0.2, до 900 токенов</text>
+  <text x="334" y="612" class="t">
+    <tspan x="334" dy="0">Системный промпт: роль наставника, поддерживающий тон на «вы»; факты — только из блока «Материалы», ссылка [n]</tspan>
+    <tspan x="334" dy="17">после каждого утверждения; оценки не ставит, сроки не меняет, даты из LMS берёт как есть, готовое решение не пишет.</tspan>
+    <tspan x="334" dy="17">+ уровень: начинающий — простые слова, аналогия, шаги, комментарии в коде; продвинутый — кратко, нюансы.</tspan>
+    <tspan x="334" dy="17">+ инструкция сценария + few-shot: 2 пары «хороший / плохой ответ + почему плохо» и пара «нет в материалах».</tspan>
+    <tspan x="334" dy="17">+ материалы [1], [2] …: LMS; от кода — цель, данные и шаги методички, обзор модуля, FAQ о доработке и опоздании;</tspan>
+    <tspan x="334" dy="17">найденные фрагменты, ресурсы, разделы лекций + 2 последние реплики + вопрос в тегах &lt;вопрос&gt;.</tspan>
+    <tspan x="334" dy="17">Уровень: выбор слева → подсказка из вопроса → уровень демо-студента → начинающий.</tspan>
+  </text>
+
+  <path d="M744 733 V752" class="arrow"/>
+  <rect x="320" y="753" width="848" height="60" rx="8" fill="#fdf0f0" stroke="#c93a3a" stroke-width="1.4" stroke-dasharray="7 4"/>
+  <text x="334" y="771" class="t"><tspan font-weight="700" fill="#c93a3a">Выходной guard:</tspan> обещание оценки или переноса в ответе модели → ответ заменяется фиксированным сценарием;</text>
+  <text x="334" y="787" class="t">срок доработки датой или «осталось N» → это предложение вырезается, в конец ответа — правило доработки;</text>
+  <text x="334" y="803" class="t">длительность «около N минут» в рекомендации, которой нет в материалах этого пункта, → вырезается.</text>
+
+  <!-- Фиксированный ответ идёт прямо в «Источники»; замена из guard — туда же -->
+  <path d="M168 534 V833" class="arrow"/>
+  <text x="180" y="650" class="s">
+    <tspan x="180" dy="0">готовый ответ</tspan>
+    <tspan x="180" dy="14">из шаблона</tspan>
+  </text>
+  <path d="M319 779 H172" class="arrow-red"/>
+  <text x="222" y="771" class="s">замена</text>
+
+  <path d="M744 813 V833" class="arrow"/>
+
+  <!-- Ряд 4: блок «Источники» -->
+  <rect x="32" y="834" width="1136" height="76" rx="10" fill="#edf8f3" stroke="#16805a" stroke-width="1.6"/>
+  <text x="46" y="858" class="h" fill="#16805a">Блок «Источники» — собирает код, а не модель</text>
+  <text x="46" y="880" class="t">
+    <tspan x="46" dy="0">Из материалов, на которые сослался ответ (нет ссылок — из всех выданных модели); нумерация подряд [1], [2] в порядке упоминания;</tspan>
+    <tspan x="46" dy="17">ссылки на несуществующие номера и свой список источников модели удаляются; источников нет — «в материалах курса ответа не нашлось».</tspan>
+  </text>
+
+  <path d="M162 910 V949" class="arrow"/>
+
+  <!-- Ряд 5: ответ, журнал, дашборд, отчёт -->
+  <rect x="32" y="950" width="260" height="108" rx="10" fill="#ffffff" stroke="#52627a" stroke-width="1.6"/>
+  <text x="46" y="974" class="h" fill="#52627a">Ответ студенту</text>
+  <text x="46" y="996" class="t">
+    <tspan x="46" dy="0">текст + «Источники» под ответом;</tspan>
+    <tspan x="46" dy="17">подпись: сценарий, уровень,</tspan>
+    <tspan x="46" dy="17">модуль; оценка ответа +1 / −1</tspan>
+  </text>
+
+  <rect x="324" y="950" width="260" height="108" rx="10" fill="#ffffff" stroke="#52627a" stroke-width="1.6"/>
+  <text x="338" y="974" class="h" fill="#52627a">Журнал SQLite</text>
+  <text x="338" y="996" class="t">
+    <tspan x="338" dy="0">вопрос без контактов, intent,</tspan>
+    <tspan x="338" dy="17">модуль, тема, уровень, источники,</tspan>
+    <tspan x="338" dy="17">отказ, задержка, токены, оценка;</tspan>
+    <tspan x="338" dy="17">live/eval/demo, хранится 90 дней</tspan>
+  </text>
+
+  <rect x="616" y="950" width="260" height="108" rx="10" fill="#ffffff" stroke="#52627a" stroke-width="1.6"/>
+  <text x="630" y="974" class="h" fill="#52627a">Дашборд «Аналитика»</text>
+  <text x="630" y="996" class="t">
+    <tspan x="630" dy="0">KPI; вопросы по дням, сценариям,</tspan>
+    <tspan x="630" dy="17">темам и модулям; пробелы в базе,</tspan>
+    <tspan x="630" dy="17">сложные лекции, отказы, оценки;</tspan>
+    <tspan x="630" dy="17">тексты live-вопросов скрыты</tspan>
+  </text>
+
+  <rect x="908" y="950" width="260" height="108" rx="10" fill="#ffffff" stroke="#52627a" stroke-width="1.6"/>
+  <text x="922" y="974" class="h" fill="#52627a">Отчёт по темам</text>
+  <text x="922" y="996" class="m">python -m curator.report --days 7</text>
+  <text x="922" y="1013" class="t">
+    <tspan x="922" dy="0">markdown, 10 разделов: темы,</tspan>
+    <tspan x="922" dy="17">пробелы, сложные лекции, отказы,</tspan>
+    <tspan x="922" dy="17">что сделать с контентом</tspan>
+  </text>
+
+  <path d="M292 1004 H323" class="arrow"/>
+  <path d="M584 1004 H615" class="arrow"/>
+  <path d="M454 1058 V1080 H1038 V1059" class="arrow"/>
+  <text x="640" y="1074" class="s">отчёт строится из того же журнала</text>
+</svg>
