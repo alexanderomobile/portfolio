@@ -14,10 +14,13 @@ Portafolio público en tres idiomas.
 |------------|----------------|
 | [Asistente virtual local y hogar inteligente](case-studies/es/09-local-voice-assistant-smart-home.md) | Infraestructura de IA privada sobre hardware propio: voz, datos personales y hogar sin nube ni suscripciones. |
 | [AutoFunnel](case-studies/es/10-autofunnel.md) | Sustituye siete integraciones por un solo panel: el embudo se dibuja con el ratón y funciona igual en siete mensajeros; el dinero va directo al propietario. |
+| [AI Development Platform](case-studies/es/15-ai-dev-platform.md) | El desarrollo avanza mientras el propietario hace otra cosa: el agente toma tareas por ventanas de límite, se verifica con tests y dice claramente qué no se comprobó. |
 | [Optimum Real Estate Bot](case-studies/es/04-optimum-real-estate.md) | Acelera ventas con clientes internacionales; base única y publicación en 13 idiomas. |
+| [Sommelier — maridaje con IA](case-studies/es/16-sommelier.md) | Consejo de nivel sumiller en la web y en el mensajero, y sustituto de un vino agotado en una sola consulta; los precios de compra no llegan al navegador. |
 | [RAG Documentation Assistant](case-studies/es/01-rag-documentation-assistant.md) | Reduce tiempo de búsqueda, alivia soporte y minimiza respuestas sin fuente verificable. |
 | [PartioBot](case-studies/es/02-partio-bot.md) | Ahorra tiempo al cerrar cuentas de grupo; elimina hojas de cálculo en el chat. |
 | [P2P Bybit Optimum Bot](case-studies/es/03-p2p-bybit-optimum.md) | Automatiza monitoreo de tipos para traders; monetización por suscripción. |
+| [CryptoBots — bots de trading](case-studies/es/17-crypto-trading-bots.md) | Bots de arbitraje y de rejilla con control de ejecución de órdenes, incluidas las parciales; un backtest con comisiones descarta la estrategia antes de perder dinero real. |
 | [MuzloProm AI Clips](case-studies/es/05-muzloprom-ai-clips.md) | Escala marketing de contenido sin editor; UGC rápido para redes sociales. |
 | [AI Review Assistant «Echo»](case-studies/es/08-ai-review-assistant.md) | Reduce la gestión de una reseña de 6 a 1 minuto, mantiene un tono único y no deja escapar … |
 | [Plataforma de agencia inmobiliaria](case-studies/es/10-real-estate-agency-platform.md) | Un catálogo real en lugar de contenido de demostración: 96 propiedades, cuatro idiomas, servidores propios y cero puertos de entrada. |

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 534" role="img" aria-label="Sommelier architecture">
+  <defs><marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#57606a"/></marker></defs>
+  <rect width="960" height="534" fill="#f6f8fa"/>
+  <text x="480" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#24292f">Sommelier — AI wine pairing</text>
+  <text x="480" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#57606a">Text, voice or photo → hybrid search → explanation only from found candidates · works without the LLM</text>
+  <rect x="24" y="74" width="912" height="136" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="38" y="93" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">CHANNELS</text>
+  <rect x="40" y="104" width="269" height="92" rx="8" fill="#24292f"/>
+  <text x="175" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">Telegram bot</text>
+  <text x="175" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">text · voice · photo</text>
+  <text x="175" y="163" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">long polling, no inbound ports</text>
+  <rect x="345" y="104" width="269" height="92" rx="8" fill="#24292f"/>
+  <text x="480" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">WordPress plugin</text>
+  <text x="480" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">[sommelier] shortcode</text>
+  <text x="480" y="163" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">server-side proxy, API key hidden</text>
+  <rect x="651" y="104" width="269" height="92" rx="8" fill="#24292f"/>
+  <text x="785" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">Roles</text>
+  <text x="785" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">guest: storefront fields</text>
+  <text x="785" y="163" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d0d7de">staff: cost, supplier, stock</text>
+  <rect x="24" y="224" width="912" height="136" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="38" y="243" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">PAIRING PIPELINE · FastAPI</text>
+  <rect x="40" y="254" width="193" height="92" rx="8" fill="#0969da"/>
+  <text x="136" y="278" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">Input</text>
+  <text x="136" y="298" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cfe3fb">voice: GigaAM v2 on CPU</text>
+  <text x="136" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cfe3fb">photo: Tesseract OCR</text>
+  <line x1="235" y1="300" x2="267" y2="300" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <rect x="269" y="254" width="193" height="92" rx="8" fill="#0969da"/>
+  <text x="366" y="278" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">Candidates</text>
+  <text x="366" y="298" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cfe3fb">Qdrant · e5-large</text>
+  <text x="366" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cfe3fb">764 wines</text>
+  <line x1="464" y1="300" x2="496" y2="300" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <rect x="498" y="254" width="193" height="92" rx="8" fill="#1f883d"/>
+  <text x="594" y="278" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">Ranking</text>
+  <text x="594" y="298" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d2f0dc">0.55 meaning + 0.3 rules</text>
+  <text x="594" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d2f0dc">+ 0.15 budget</text>
+  <line x1="693" y1="300" x2="725" y2="300" stroke="#57606a" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <rect x="727" y="254" width="193" height="92" rx="8" fill="#0969da"/>
+  <text x="824" y="278" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">Explanation</text>
+  <text x="824" y="298" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cfe3fb">Gemma 4 26B</text>
+  <text x="824" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#cfe3fb">only from top-5 candidates</text>
+  <rect x="24" y="374" width="912" height="136" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="38" y="393" font-family="Arial,sans-serif" font-size="11" font-weight="bold" fill="#57606a">DATA AND DEGRADATION</text>
+  <rect x="40" y="404" width="269" height="92" rx="8" fill="#57606a"/>
+  <text x="175" y="428" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">MariaDB</text>
+  <text x="175" y="448" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#e6e9ec">catalogue · query log</text>
+  <text x="175" y="463" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#e6e9ec">keys and staff</text>
+  <rect x="345" y="404" width="269" height="92" rx="8" fill="#57606a"/>
+  <text x="480" y="428" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">Sommelier rules</text>
+  <text x="480" y="448" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#e6e9ec">42 pairing rules</text>
+  <text x="480" y="463" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#e6e9ec">36 style families · 220 aromas</text>
+  <rect x="651" y="404" width="269" height="92" rx="8" fill="#1f883d"/>
+  <text x="785" y="428" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#fff">LLM gone?</text>
+  <text x="785" y="448" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d2f0dc">timeout 25 s → retry 4 s</text>
+  <text x="785" y="463" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#d2f0dc">→ backup → rule-based answer</text>
+</svg>
